@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="16.17.00" ExportDate="2023-12-08T16:01:01.2240975+01:00">
+  <Header>
+    <App Guid="233c9054-8bf6-4199-87f4-3ee9b2d78ca2" />
+    <Language Default="en-us" />
+    <Dimensions>
+      <Dimension DimensionID="32" Name="Western Frisian (Netherlands)" SystemKey="" ExternalKey="fy-NL" Active="true" />
+      <Dimension DimensionID="33" Name="Dutch (Netherlands)" SystemKey="" ExternalKey="nl-NL" Active="true" />
+      <Dimension DimensionID="5" Name="German (Germany)" SystemKey="" ExternalKey="de-DE" Active="true" />
+      <Dimension DimensionID="6" Name="English (United States)" SystemKey="" ExternalKey="en-US" Active="true" />
+      <Dimension DimensionID="7" Name="English (Australia)" SystemKey="" ExternalKey="en-AU" Active="true" />
+      <Dimension DimensionID="8" Name="Italian (Italy)" SystemKey="" ExternalKey="it-IT" Active="true" />
+      <Dimension DimensionID="9" Name="Czech (Czechia)" SystemKey="" ExternalKey="cs-CZ" Active="true" />
+      <Dimension DimensionID="10" Name="French (France)" SystemKey="" ExternalKey="fr-FR" Active="true" />
+      <Dimension DimensionID="11" Name="Croatian (Croatia)" SystemKey="" ExternalKey="hr-HR" Active="true" />
+      <Dimension DimensionID="12" Name="Portuguese (Portugal)" SystemKey="" ExternalKey="pt-PT" Active="true" />
+    </Dimensions>
+  </Header>
+  <AttributeSets>
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Scope="System.App" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Scope="System.App" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+  </AttributeSets>
+  <Entities>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="a7e22002-f940-4399-a05d-c1392a2b76c7" Json="True" KeyNumber="107">
+      <Value Key="DebugLog" Value="Caller: Create; Line: 60; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Apps\Work\AppCreate\AppCreator.cs&#xA;Caller: Config: False, Resources: False, Settings: False; AllOk: False; Line: 0; File: Message&#xA;Caller: App Entity Count: 0; Line: 0; File: Message&#xA;Caller: App ContentType Count: 127; Line: 0; File: Message&#xA;Caller: App Metadata Count: 0; Line: 0; File: Message&#xA;Caller: Has Type App Config: ToSic.Eav.Data.ContentTypeWrapper; Line: 0; File: Message&#xA;Caller: Has Type App Resources: ; Line: 0; File: Message&#xA;Caller: Has Type App Settings: ; Line: 0; File: Message" Type="String" />
+      <Value Key="DisplayName" Value="app-test-pickers" Type="String" />
+      <Value Key="Folder" Value="app-test-pickers" Type="String" />
+      <Value Key="OriginalId" Value="" Type="String" />
+      <Value Key="Version" Value="00.00.16" Type="String" />
+    </Entity>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="b71a275c-8cb9-4346-8a6d-9c9832b6c5d6" KeyNumber="107" />
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="6a5ed0af-7b60-4366-a726-a91bebb9661c" KeyNumber="107" />
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="73084eae-c908-497a-8e26-5090b5891b45" Json="True">
+      <Value Key="ContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Identifier" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="IsHidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="ListContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Location" Value="Site" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="default" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Path" Value="default.cshtml" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="PresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="PublishData" Value="False" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="SearchIndexingStreams" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsToPublish" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="C# Razor" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="UseForList" Value="False" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewController" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+  </Entities>
+  <PortalFiles />
+  <PortalFolders>
+    <Folder Id="2282" RelativePath="adam/app-test-pickers/" />
+  </PortalFolders>
+</SexyContent>
