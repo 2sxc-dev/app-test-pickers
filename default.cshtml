@@ -1,6 +1,27 @@
-@inherits Custom.Hybrid.Razor14
+@inherits Custom.Hybrid.RazorTyped
 @* This inherits statement gets you features like App, CmsContext, Data etc. - you can delete this comment *@
+<h1>Test pickers app</h1>
 
-<div @Edit.TagToolbar(Content)>
-    Put your content here
-</div>
+<ul>
+    @{
+        var cars = AsItems(App.Data["Car"]);
+        var mazda = cars.FirstOrDefault(c => c.Title == "Mazda");
+        var subaru = cars.FirstOrDefault(c => c.Title == "Subaru");
+        var prefillMazda = "EntityEntity=" + mazda.Guid;// + "&QualityCheckSets=" + set?.Guid;
+        var prefillSubaru = "EntityEntity=" + subaru.Guid;
+        var prefillSubaruAndMazda = "EntityEntity=" + subaru.Guid + "," + mazda.Guid;
+        @* var prefillMazdaId = "EntityEntity=[" + mazda.Id + "]"; *@
+    }
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntityOne", prefill: prefillMazda)>
+        With prefill Mazda
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntityOne", prefill: prefillSubaru)>
+        With prefill Subaru
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntityOne", prefill: prefillSubaruAndMazda)>
+        With prefill Subaru and Mazda
+    </li>
+    @* <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntityOne", prefill: prefillMazdaId)>
+        With prefill Mazda ID
+    </li> *@
+</ul>
