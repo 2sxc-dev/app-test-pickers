@@ -1,27 +1,52 @@
 @inherits Custom.Hybrid.RazorTyped
 @* This inherits statement gets you features like App, CmsContext, Data etc. - you can delete this comment *@
-<h1>Test pickers app</h1>
 
+@{
+    var cars = AsItems(App.Data["Car"]);
+    var mazda = cars.FirstOrDefault(c => c.Title == "Mazda");
+    var subaru = cars.FirstOrDefault(c => c.Title == "Subaru");
+}
+
+<h1 @Kit.Toolbar.Default()>Test pickers app</h1>
+
+<h2>Entity - Entity</h2>
 <ul>
     @{
-        var cars = AsItems(App.Data["Car"]);
-        var mazda = cars.FirstOrDefault(c => c.Title == "Mazda");
-        var subaru = cars.FirstOrDefault(c => c.Title == "Subaru");
-        var prefillMazda = "EntityEntity=" + mazda.Guid;// + "&QualityCheckSets=" + set?.Guid;
-        var prefillSubaru = "EntityEntity=" + subaru.Guid;
-        var prefillSubaruAndMazda = "EntityEntity=" + subaru.Guid + "," + mazda.Guid;
+        var prefillMazdaEntityEntity = "EntityEntity=" + mazda.Guid;
+        var prefillSubaruEntityEntity = "EntityEntity=" + subaru.Guid;
+        var prefillSubaruAndMazdaEntityEntity = "EntityEntity=" + subaru.Guid + "," + mazda.Guid;
         @* var prefillMazdaId = "EntityEntity=[" + mazda.Id + "]"; *@
     }
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntityOne", prefill: prefillMazda)>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillMazdaEntityEntity)>
         With prefill Mazda
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntityOne", prefill: prefillSubaru)>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillSubaruEntityEntity)>
         With prefill Subaru
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntityOne", prefill: prefillSubaruAndMazda)>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillSubaruAndMazdaEntityEntity)>
         With prefill Subaru and Mazda
     </li>
-    @* <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntityOne", prefill: prefillMazdaId)>
+    @* <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillMazdaId)>
         With prefill Mazda ID
     </li> *@
+</ul>
+
+<h2>Entity - Query</h2>
+<ul>
+    @{
+        
+        var prefillMazdaEntityQuery = "EntityQuery=" + mazda.Guid;
+        var prefillSubaruEntityQuery = "EntityQuery=" + subaru.Guid;
+        var prefillSubaruAndMazdaEntityQuery = "EntityQuery=" + subaru.Guid + "," + mazda.Guid;
+    }
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill: prefillMazdaEntityQuery)>
+        With prefill Mazda
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill: prefillSubaruEntityQuery)>
+        With prefill Subaru
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill:
+             prefillSubaruAndMazdaEntityQuery)>
+        With prefill Subaru and Mazda
+    </li>
 </ul>
