@@ -5,6 +5,7 @@
     var cars = AsItems(App.Data["Car"]);
     var mazda = cars.FirstOrDefault(c => c.Title == "Mazda");
     var subaru = cars.FirstOrDefault(c => c.Title == "Subaru");
+    var citroen = cars.FirstOrDefault(c => c.Title == "Citroen");
 }
 
 <h1 @Kit.Toolbar.Default()>Test pickers app</h1>
@@ -35,10 +36,14 @@
 <h2>Entity - Query</h2>
 <ul>
     @{
+        var prefillCitroenEntityQuery = "EntityQuerySpecialStream=" + citroen.Guid;
         var prefillMazdaEntityQuery = "EntityQuery=" + mazda.Guid;
         var prefillSubaruEntityQuery = "EntityQuery=" + subaru.Guid;
         var prefillSubaruAndMazdaEntityQuery = "EntityQuery=" + subaru.Guid + "," + mazda.Guid;
     }
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingleSpecialStream", prefill: prefillCitroenEntityQuery)>
+        With prefill Citroen(send GUID, show Citroen) on a field with special query stream
+    </li>
     <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill: prefillMazdaEntityQuery)>
         With prefill Mazda(send GUID, show Mazda)
     </li>
