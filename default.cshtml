@@ -2,6 +2,9 @@
 @* This inherits statement gets you features like App, CmsContext, Data etc. - you can delete this comment *@
 
 @{
+    var bikes = AsItems(App.Data["Bike"]);
+    var kawasaki = bikes.FirstOrDefault(b => b.Title == "Kawasaki");
+
     var cars = AsItems(App.Data["Car"]);
     var mazda = cars.FirstOrDefault(c => c.Title == "Mazda");
     var subaru = cars.FirstOrDefault(c => c.Title == "Subaru");
@@ -17,6 +20,9 @@
         var prefillSubaruEntityEntity = "EntityEntity=" + subaru.Guid;
         var prefillSubaruAndMazdaEntityEntity = "EntityEntity=" + subaru.Guid + "," + mazda.Guid;
         @* var prefillMazdaId = "EntityEntity=[" + mazda.Id + "]"; *@
+
+        var prefillKawasakiEntityEntity = "EntityEntity=" + kawasaki.Guid;
+        var prefillMazdaAndKawasakiEntityEntity = "EntityEntity=" + mazda.Guid + "," + kawasaki.Guid;
     }
     <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillMazdaEntityEntity)>
         With prefill Mazda (send GUID, show Mazda)
@@ -31,6 +37,14 @@
     @* <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillMazdaId)>
     With prefill Mazda ID
     </li> *@
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill:
+             prefillKawasakiEntityEntity)>
+        With prefill Kawasaki (send GUID, show some GUID)
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill:
+             prefillMazdaAndKawasakiEntityEntity)>
+        With prefill Mazda and Kawasaki (send GUIDs, show Mazda and some GUID)
+    </li>
 </ul>
 
 <h2>Entity - Query</h2>
@@ -40,10 +54,10 @@
         var prefillMazdaEntityQuery = "EntityQuery=" + mazda.Guid;
         var prefillSubaruEntityQuery = "EntityQuery=" + subaru.Guid;
         var prefillSubaruAndMazdaEntityQuery = "EntityQuery=" + subaru.Guid + "," + mazda.Guid;
+
+        var prefillKawasakiEntityQuery = "EntityQuery=" + kawasaki.Guid;
+        var prefillMazdaAndKawasakiEntityQuery = "EntityQuery=" + mazda.Guid + "," + kawasaki.Guid;
     }
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingleSpecialStream", prefill: prefillCitroenEntityQuery)>
-        With prefill Citroen(send GUID, show Citroen) on a field with special query stream
-    </li>
     <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill: prefillMazdaEntityQuery)>
         With prefill Mazda(send GUID, show Mazda)
     </li>
@@ -53,6 +67,17 @@
     <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill:
              prefillSubaruAndMazdaEntityQuery)>
         With prefill Subaru and Mazda (send GUIDs, show Subaru and Mazda)
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingleSpecialStream", prefill:
+             prefillCitroenEntityQuery)>
+        With prefill Citroen(send GUID, show Citroen) on a field with special query stream
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill: prefillKawasakiEntityQuery)>
+        With prefill Kawasaki (send GUID, show some GUID)
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill:
+             prefillMazdaAndKawasakiEntityQuery)>
+        With prefill Mazda and Kawasaki (send GUIDs, show Mazda and some GUID)
     </li>
 </ul>
 
