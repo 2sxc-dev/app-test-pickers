@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.00.01" ExportDate="2024-01-15T06:45:32.3879989+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.00.01" ExportDate="2024-01-15T06:50:33.5173703+01:00">
   <Header>
     <App Guid="233c9054-8bf6-4199-87f4-3ee9b2d78ca2" />
     <Language Default="en-us" />
@@ -6189,7 +6189,7 @@
       <Value Key="ContentTypeNames" Value="997bc375-2a28-4786-b6fd-0146dce896dd" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="VehicleParentChildrenSourceEntity" Type="String">
+      <Value Key="Title" Value="VehicleParentChildSourceEntity" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
     </Entity>
