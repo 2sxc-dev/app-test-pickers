@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.00.00" ExportDate="2024-01-15T06:06:54.8696019+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.00.01" ExportDate="2024-01-15T06:22:22.2561173+01:00">
   <Header>
     <App Guid="233c9054-8bf6-4199-87f4-3ee9b2d78ca2" />
     <Language Default="en-us" />
@@ -4542,7 +4542,7 @@
             <Value Key="EnableRemove" Value="True" Type="Boolean">
               <Dimension DimensionID="6" ReadOnly="false" />
             </Value>
-            <Value Key="EntityType" Value="Vehicle" Type="String">
+            <Value Key="EntityType" Value="VehicleChildParent" Type="String">
               <Dimension DimensionID="6" ReadOnly="false" />
             </Value>
             <Value Key="Label" Value="" Type="String">
@@ -4595,7 +4595,7 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
-    <AttributeSet StaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" Name="Vehicle" Scope="Default" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" Name="VehicleChildParent" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Name" Type="String" IsTitle="true">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="e11fe3d7-e671-4140-a162-5d9558afa947" Json="True" KeyNumber="5598">
@@ -5641,125 +5641,125 @@
       <Value Key="ContentTypeNames" Value="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="VehicleSourceEntity" Type="String">
+      <Value Key="Title" Value="VehicleChildParentSourceEntity" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="ba612717-90a6-4010-a86e-789b8c647aff">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="ba612717-90a6-4010-a86e-789b8c647aff">
       <Value Key="Name" Value="Vehicle types" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="327f6459-7023-411b-bb31-e5f08f810be4">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="327f6459-7023-411b-bb31-e5f08f810be4">
       <Value Key="Name" Value="Cars" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="ba612717-90a6-4010-a86e-789b8c647aff" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="44594dc4-ae78-41da-9457-9a7df0fc2464">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="44594dc4-ae78-41da-9457-9a7df0fc2464">
       <Value Key="Name" Value="Bikes" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="ba612717-90a6-4010-a86e-789b8c647aff" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="d1b7fdcc-69b8-4766-b68b-8568b477530e">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="d1b7fdcc-69b8-4766-b68b-8568b477530e">
       <Value Key="Name" Value="Trains" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="ba612717-90a6-4010-a86e-789b8c647aff" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="ccbe2b5c-7903-4191-baef-202c408b7425">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="ccbe2b5c-7903-4191-baef-202c408b7425">
       <Value Key="Name" Value="Boats" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="ba612717-90a6-4010-a86e-789b8c647aff" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="d52c44e2-b427-4766-9aee-567578eb2454">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="d52c44e2-b427-4766-9aee-567578eb2454">
       <Value Key="Name" Value="Renault Twingo" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="327f6459-7023-411b-bb31-e5f08f810be4" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="d35ac5ca-868c-4780-9b93-7076fac61f6f">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="d35ac5ca-868c-4780-9b93-7076fac61f6f">
       <Value Key="Name" Value="Subaru Impreza WRX STI" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="327f6459-7023-411b-bb31-e5f08f810be4" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="2592939a-218d-4581-beda-3bf1f7b1307b">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="2592939a-218d-4581-beda-3bf1f7b1307b">
       <Value Key="Name" Value="BMW X6" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="327f6459-7023-411b-bb31-e5f08f810be4" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="b64c85d7-abbb-4ec9-8c3a-cc767a661f23">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="b64c85d7-abbb-4ec9-8c3a-cc767a661f23">
       <Value Key="Name" Value="Mazda Miata" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="327f6459-7023-411b-bb31-e5f08f810be4" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="426c5fae-050b-4255-ae2a-00af0944a003">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="426c5fae-050b-4255-ae2a-00af0944a003">
       <Value Key="Name" Value="Kawasaki Ninja" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="44594dc4-ae78-41da-9457-9a7df0fc2464" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="8d62c52b-2f9f-4d9a-bcb6-ad052efa3059">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="8d62c52b-2f9f-4d9a-bcb6-ad052efa3059">
       <Value Key="Name" Value="BMW GS" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="44594dc4-ae78-41da-9457-9a7df0fc2464" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="f31f2cac-6745-4cfd-87b2-f8be6298ef8f">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="f31f2cac-6745-4cfd-87b2-f8be6298ef8f">
       <Value Key="Name" Value="Honda CBR" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="44594dc4-ae78-41da-9457-9a7df0fc2464" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="fee34c3b-cdcc-47ea-aae1-739f5e8f6a01">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="fee34c3b-cdcc-47ea-aae1-739f5e8f6a01">
       <Value Key="Name" Value="Suzuki GSX" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="44594dc4-ae78-41da-9457-9a7df0fc2464" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="e698b9d4-7885-4bd5-b614-0cff1ef996e1">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="e698b9d4-7885-4bd5-b614-0cff1ef996e1">
       <Value Key="Name" Value="L0 Series Maglev" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="d1b7fdcc-69b8-4766-b68b-8568b477530e" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="038941f9-c18d-4e99-95a1-8084cbf9ac50">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="038941f9-c18d-4e99-95a1-8084cbf9ac50">
       <Value Key="Name" Value="CRRC Qingdao Sifang Maglev" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="d1b7fdcc-69b8-4766-b68b-8568b477530e" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="49c6825d-3cdd-45bf-8115-aeb82bf2be09">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="49c6825d-3cdd-45bf-8115-aeb82bf2be09">
       <Value Key="Name" Value="TGV POS" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="d1b7fdcc-69b8-4766-b68b-8568b477530e" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="5b3ec6c9-2826-441b-9461-1e7834f93f19">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="5b3ec6c9-2826-441b-9461-1e7834f93f19">
       <Value Key="Name" Value="Alumacraft Classic 165 SC" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="ccbe2b5c-7903-4191-baef-202c408b7425" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="a6cac7b3-346b-48c6-ad91-a430e56dd796">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="a6cac7b3-346b-48c6-ad91-a430e56dd796">
       <Value Key="Name" Value="Compass 165" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="ccbe2b5c-7903-4191-baef-202c408b7425" Type="Entity" />
     </Entity>
-    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="Vehicle" EntityGUID="4f6a9974-1899-439b-9d3d-5dd575ed01ee">
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" AttributeSetName="VehicleChildParent" EntityGUID="4f6a9974-1899-439b-9d3d-5dd575ed01ee">
       <Value Key="Name" Value="Kolibri 900" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Parent" Value="ccbe2b5c-7903-4191-baef-202c408b7425" Type="Entity" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="590d5961-c2d5-4f50-867a-5c609dd820c8" AttributeSetName="UiPickerModeTree" EntityGUID="e9c0d783-77d1-4949-809e-208d891374a5" Json="True">
-      <Value Key="Title" Value="VehicleTreePickerConfiguration" Type="String">
+      <Value Key="Title" Value="VehicleChildParentTreeConfiguration" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="TreeAllowSelectBranch" Value="True" Type="Boolean">
@@ -5800,15 +5800,33 @@
       </Value>
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="4bd5de4b-674f-4b73-82c1-a07999874f0d" Json="True">
-      <Value Key="AllowEdit" Value="True" Type="Boolean" />
-      <Value Key="Description" Value="" Type="String" />
-      <Value Key="HiddenInQueryPicker" Value="False" Type="Boolean" />
-      <Value Key="Name" Value="VehicleQuery" Type="String" />
-      <Value Key="Params" Value="ReplaceThis=27&#xA;ReplaceThisAsWell=[QueryString:Id]" Type="String" />
-      <Value Key="StreamsOut" Value="Default,Header" Type="String" />
-      <Value Key="StreamWiring" Value="d31f561e-2368-4df3-98b4-11b7586f11d4:Vehicle&gt;Out:Default" Type="String" />
-      <Value Key="TestParameters" Value="[Demo:Demo]=true" Type="String" />
-      <Value Key="VisualDesignerData" Value="{&quot;ShowDataSourceDetails&quot;:true}" Type="String" />
+      <Value Key="AllowEdit" Value="True" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="HiddenInQueryPicker" Value="False" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="VehicleChildParentQuery" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Params" Value="ReplaceThis=27&#xA;ReplaceThisAsWell=[QueryString:Id]" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsOut" Value="Default,Header" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamWiring" Value="d31f561e-2368-4df3-98b4-11b7586f11d4:VehicleChildParent&gt;Out:Default" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TestParameters" Value="[Demo:Demo]=true" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="VisualDesignerData" Value="{&quot;ShowDataSourceDetails&quot;:true}" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
     </Entity>
     <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="d31f561e-2368-4df3-98b4-11b7586f11d4" Json="True" KeyGuid="4bd5de4b-674f-4b73-82c1-a07999874f0d">
       <Value Key="Description" Value="" Type="String" />
@@ -5817,7 +5835,7 @@
       <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 340,&#xD;&#xA;  &quot;Left&quot;: 440&#xD;&#xA;}" Type="String" />
     </Entity>
     <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="5f8e3968-e02b-40d5-ab77-f60c2e73d244" AttributeSetName="UiPickerSourceQuery" EntityGUID="fbbc378b-3c43-4d38-818d-567c6cf38488" Json="True">
-      <Value Key="CreateTypes" Value="Vehicle" Type="String">
+      <Value Key="CreateTypes" Value="VehicleChildParent" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Label" Value="Name" Type="String">
@@ -5826,7 +5844,7 @@
       <Value Key="MoreFields" Value="Parent" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
-      <Value Key="Query" Value="VehicleQuery" Type="String">
+      <Value Key="Query" Value="VehicleChildParentQuery" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="QueryParameters" Value="" Type="String">
@@ -5835,10 +5853,39 @@
       <Value Key="StreamName" Value="Default" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
-      <Value Key="Title" Value="VehicleSourceQuery" Type="String">
+      <Value Key="Title" Value="VehicleChildParentSourceQuery" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="Value" Value="Id" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="33bed8c8-808d-4f1d-8d1c-b3894432ff6c" Json="True" KeyString="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1">
+      <Value Key="AdditionalSettings" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="VehicleChildParent" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
     </Entity>
