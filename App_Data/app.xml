@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.01.01" ExportDate="2024-01-26T13:21:28.0301545+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="17.01.01" ExportDate="2024-01-26T16:49:18.1461747+01:00">
   <Header>
     <App Guid="233c9054-8bf6-4199-87f4-3ee9b2d78ca2" />
     <Language Default="en-us" />
@@ -21,7 +21,15 @@
       <Attributes />
     </AttributeSet>
     <AttributeSet StaticName="App-Settings" Name="App-Settings" Scope="System.App" AlwaysShareConfiguration="false">
-      <Attributes />
+      <Attributes>
+        <Attribute StaticName="testString" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="78cd6e01-373c-494b-8b76-c6cbb0d9b804" Json="True" KeyNumber="5627">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="testString" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
     </AttributeSet>
     <AttributeSet StaticName="81e41b80-d9b5-4449-a499-ff8ae3381474" Name="Bike" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
@@ -428,6 +436,274 @@
               <Dimension DimensionID="6" ReadOnly="false" />
             </Value>
             <Value Key="Separator" Value="," Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" Name="File" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Name" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a4a26141-59d5-4865-afb4-98f45cc1d70e" Json="True" KeyNumber="5631">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Name" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Parent" Type="Entity" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="68e8777f-7b9d-4d60-9b2f-b5a50b1ba586" Json="True" KeyNumber="5632">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="entity-picker" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Parent" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="6fa7f390-7612-40c6-baff-2bcf6140a85f" AttributeSetName="@entity-picker" EntityGUID="6b8adbad-36d1-44b4-8ed3-00d9ef9b7ac7" Json="True" KeyNumber="5632">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="CreateParameters" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="CreatePrefill" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DataSources" Value="ed8c82fd-1fb8-4156-a170-049ee069b375" Type="Entity" />
+            <Value Key="EditParameters" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableCreate" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableDelete" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableReselect" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="PickerDisplayMode" Value="list" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" Name="Folder" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Name" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="5f9adb6d-ab5b-4f75-9f17-6f5a557ef6a7" Json="True" KeyNumber="5628">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Name" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Parent" Type="Entity" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b63d3210-4f48-40f4-9402-18f072fa033e" Json="True" KeyNumber="5629">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="entity-picker" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Parent" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="6fa7f390-7612-40c6-baff-2bcf6140a85f" AttributeSetName="@entity-picker" EntityGUID="09f9189b-b912-4efd-91ca-e0969f670faa" Json="True" KeyNumber="5629">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="CreateParameters" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="CreatePrefill" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DataSources" Value="ed8c82fd-1fb8-4156-a170-049ee069b375" Type="Entity" />
+            <Value Key="EditParameters" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableCreate" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableDelete" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableReselect" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="PickerDisplayMode" Value="list" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Children" Type="Entity" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b100e642-5c71-434c-ac26-2f2d418479c1" Json="True" KeyNumber="5630">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="entity-picker" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="Children" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="6fa7f390-7612-40c6-baff-2bcf6140a85f" AttributeSetName="@entity-picker" EntityGUID="65dc73e2-3618-463c-88ea-4e9269a23df1" Json="True" KeyNumber="5630">
+            <Value Key="AllowMultiValue" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="CreateParameters" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="CreatePrefill" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DataSources" Value="1512accc-71e5-4f12-b3d7-721a5474741e" Type="Entity" />
+            <Value Key="EditParameters" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableCreate" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableDelete" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableReselect" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="PickerDisplayMode" Value="list" Type="String">
               <Dimension DimensionID="6" ReadOnly="false" />
             </Value>
           </Entity>
@@ -5207,6 +5483,190 @@
         </Attribute>
       </Attributes>
     </AttributeSet>
+    <AttributeSet StaticName="c8b14c2b-02d9-4e8a-897d-31d711a126ed" Name="TreePickersMultyStream" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="ChildParent" Type="Empty" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="98f42e7d-0474-485c-ad63-4b2e1127bff2" Json="True" KeyNumber="5633">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="ChildParent" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="FileFolderCPTreePicker" Type="Entity" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b9573e52-71c5-4525-a493-5dd4ea6bc1f7" Json="True" KeyNumber="5634">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="entity-picker" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="FileFolderCPTreePicker" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="6fa7f390-7612-40c6-baff-2bcf6140a85f" AttributeSetName="@entity-picker" EntityGUID="a24db076-f526-4954-a34d-7760c893cecf" Json="True" KeyNumber="5634">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="CreateParameters" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="CreatePrefill" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DataSources" Value="f46b564f-56c6-4ada-b6f1-13a4e952ff25" Type="Entity" />
+            <Value Key="EditParameters" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableCreate" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableDelete" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableReselect" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="PickerDisplayConfiguration" Value="7f027930-1498-4463-ab9a-42e7e87825b7" Type="Entity" />
+            <Value Key="PickerDisplayMode" Value="tree" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="ParentChild" Type="Empty" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="bf65b602-21f0-479d-a5b3-db761973e72d" Json="True" KeyNumber="5635">
+            <Value Key="InputType" Value="empty-default" Type="String" />
+            <Value Key="Name" Value="ParentChild" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="FileFolderPCTreePicker" Type="Entity" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="c318f7fc-3857-4b2e-96c1-155f8e8083e1" Json="True" KeyNumber="5636">
+            <Value Key="CustomJavaScript" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DefaultValue" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Disabled" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DisableTranslation" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="HelpLink" Value="" Type="Hyperlink">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Information" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="InputType" Value="entity-picker" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Name" Value="FileFolderPCTreePicker" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Notes" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Placeholder" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Required" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="Tooltip" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="6fa7f390-7612-40c6-baff-2bcf6140a85f" AttributeSetName="@entity-picker" EntityGUID="ce1738b3-58db-45aa-8781-5f85a890848d" Json="True" KeyNumber="5636">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="CreateParameters" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="CreatePrefill" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="DataSources" Value="f46b564f-56c6-4ada-b6f1-13a4e952ff25" Type="Entity" />
+            <Value Key="EditParameters" Value="" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableCreate" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableDelete" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableEdit" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableRemove" Value="True" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="EnableReselect" Value="False" Type="Boolean">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+            <Value Key="PickerDisplayConfiguration" Value="1e16bdd1-7e4d-40b4-ac96-83c5d0374731" Type="Entity" />
+            <Value Key="PickerDisplayMode" Value="tree" Type="String">
+              <Dimension DimensionID="6" ReadOnly="false" />
+            </Value>
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
     <AttributeSet StaticName="b74848bb-a2b4-49ad-8ccb-c0e6218c3da1" Name="VehicleChildParent" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Name" Type="String" IsTitle="true">
@@ -7028,6 +7488,354 @@
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
       <Value Key="YearOfFIrstRegistration" Value="2010" Type="Number">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="8af67fe6-d0a6-4b97-b87f-33dd1c9923c1" Json="True" KeyString="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a">
+      <Value Key="AdditionalSettings" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="File" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="f11f79a2-186b-49ec-89d6-be260698e371" AttributeSetName="UiPickerSourceEntity" EntityGUID="89041795-b756-410a-8a77-04e36c8f689c" Json="True">
+      <Value Key="ContentTypeNames" Value="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="FileSourceEntity" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="f11f79a2-186b-49ec-89d6-be260698e371" AttributeSetName="UiPickerSourceEntity" EntityGUID="ed8c82fd-1fb8-4156-a170-049ee069b375" Json="True">
+      <Value Key="ContentTypeNames" Value="3a45e328-8578-4ac4-a58d-9443c500aaaf" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="FolderSourceEntity" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="f11f79a2-186b-49ec-89d6-be260698e371" AttributeSetName="UiPickerSourceEntity" EntityGUID="1512accc-71e5-4f12-b3d7-721a5474741e" Json="True">
+      <Value Key="ContentTypeNames" Value="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a,3a45e328-8578-4ac4-a58d-9443c500aaaf" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="FileAndFolderSourceEntity" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" AttributeSetName="Folder" EntityGUID="5aa84e21-af72-409a-be05-694e772bb222">
+      <Value Key="Children" Value="d582b42b-64c6-4dfa-a793-3ae4be1fd35d,87505799-c640-49e1-a7ec-074cb3183f08,3db382e4-0d0b-4793-8c71-9b9e3c76254b" Type="Entity" />
+      <Value Key="Name" Value="root" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" AttributeSetName="Folder" EntityGUID="d582b42b-64c6-4dfa-a793-3ae4be1fd35d">
+      <Value Key="Children" Value="1071e9e0-9d70-45c1-a018-10abc0cc2386,f31b5102-cf8b-40c6-814a-22033df4981e" Type="Entity" />
+      <Value Key="Name" Value="branch1" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="5aa84e21-af72-409a-be05-694e772bb222" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" AttributeSetName="Folder" EntityGUID="87505799-c640-49e1-a7ec-074cb3183f08">
+      <Value Key="Children" Value="dfba5a9b-f7dd-4619-aa86-5d832b684d01" Type="Entity" />
+      <Value Key="Name" Value="branch2" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="5aa84e21-af72-409a-be05-694e772bb222" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" AttributeSetName="Folder" EntityGUID="3db382e4-0d0b-4793-8c71-9b9e3c76254b">
+      <Value Key="Children" Value="a40e1f96-e39a-4d26-b8be-3914dad35e45,18678cb4-ccb0-4ae9-a7ef-57084a705115,43f26439-4322-4d6f-a385-89ee888f388f" Type="Entity" />
+      <Value Key="Name" Value="branch3" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="5aa84e21-af72-409a-be05-694e772bb222" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" AttributeSetName="Folder" EntityGUID="1071e9e0-9d70-45c1-a018-10abc0cc2386">
+      <Value Key="Name" Value="branch11" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="d582b42b-64c6-4dfa-a793-3ae4be1fd35d" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" AttributeSetName="Folder" EntityGUID="f31b5102-cf8b-40c6-814a-22033df4981e">
+      <Value Key="Name" Value="branch12" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="d582b42b-64c6-4dfa-a793-3ae4be1fd35d" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" AttributeSetName="Folder" EntityGUID="dfba5a9b-f7dd-4619-aa86-5d832b684d01">
+      <Value Key="Name" Value="branch21" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="87505799-c640-49e1-a7ec-074cb3183f08" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" AttributeSetName="Folder" EntityGUID="a40e1f96-e39a-4d26-b8be-3914dad35e45">
+      <Value Key="Name" Value="branch31" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="3db382e4-0d0b-4793-8c71-9b9e3c76254b" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" AttributeSetName="Folder" EntityGUID="18678cb4-ccb0-4ae9-a7ef-57084a705115">
+      <Value Key="Name" Value="branch32" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="3db382e4-0d0b-4793-8c71-9b9e3c76254b" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="3a45e328-8578-4ac4-a58d-9443c500aaaf" AttributeSetName="Folder" EntityGUID="43f26439-4322-4d6f-a385-89ee888f388f">
+      <Value Key="Name" Value="branch33" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="3db382e4-0d0b-4793-8c71-9b9e3c76254b" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="de03d33b-3da4-4a2a-b19f-c89ebf5cb27e">
+      <Value Key="Name" Value="leaf111" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="1071e9e0-9d70-45c1-a018-10abc0cc2386" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="27689df9-4df2-4fec-99a6-71599dc07285">
+      <Value Key="Name" Value="leaf112" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="1071e9e0-9d70-45c1-a018-10abc0cc2386" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="56509fbb-78c2-49ed-b133-8d3d569a964d">
+      <Value Key="Name" Value="leaf121" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="f31b5102-cf8b-40c6-814a-22033df4981e" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="10ebf989-c163-4775-928c-0af794e44955">
+      <Value Key="Name" Value="leaf11" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="d582b42b-64c6-4dfa-a793-3ae4be1fd35d" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="734b7d38-bc97-44d2-beb8-a17a472e0d42">
+      <Value Key="Name" Value="leaf12" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="d582b42b-64c6-4dfa-a793-3ae4be1fd35d" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="049ef274-c2f8-4319-b21b-a4776423c1e2">
+      <Value Key="Name" Value="leaf1" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="5aa84e21-af72-409a-be05-694e772bb222" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="7a5f0449-67a9-459d-8b99-400e76e00cc0">
+      <Value Key="Name" Value="leaf2" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="5aa84e21-af72-409a-be05-694e772bb222" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="d4c42ffe-a2bd-4be3-8125-40b9eb87e99a">
+      <Value Key="Name" Value="leaf3" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="5aa84e21-af72-409a-be05-694e772bb222" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="e4293d71-c8bd-4527-81fe-1d34d91db283">
+      <Value Key="Name" Value="leaf211" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="dfba5a9b-f7dd-4619-aa86-5d832b684d01" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="c3c574ad-602e-4e6e-9f51-d86d643470fc">
+      <Value Key="Name" Value="leaf311" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="a40e1f96-e39a-4d26-b8be-3914dad35e45" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="b5cbc269-cece-4dad-a8ed-4f65edcccfe1">
+      <Value Key="Name" Value="leaf312" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="a40e1f96-e39a-4d26-b8be-3914dad35e45" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="af1d0b9e-7e8b-40a9-9811-9b4fb692c60a" AttributeSetName="File" EntityGUID="bfd04576-f028-4f6a-afd8-2994e7d28160">
+      <Value Key="Name" Value="leaf331" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Parent" Value="43f26439-4322-4d6f-a385-89ee888f388f" Type="Entity" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="8b5abb31-cfe6-4963-a016-1af4babf5ad6" Json="True">
+      <Value Key="AllowEdit" Value="True" Type="Boolean" />
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="HiddenInQueryPicker" Value="False" Type="Boolean" />
+      <Value Key="Name" Value="FileFolderQuery" Type="String" />
+      <Value Key="Params" Value="ReplaceThis=27&#xA;ReplaceThisAsWell=[QueryString:Id]" Type="String" />
+      <Value Key="StreamsOut" Value="Default,Header,FolderStream,FileStream" Type="String" />
+      <Value Key="StreamWiring" Value="1550c857-b06b-4b16-8619-ab33982d41a7:Folder&gt;Out:FolderStream&#xD;&#xA;eed1e1a4-04c0-4a52-87ec-1a7cb3752863:File&gt;Out:FileStream" Type="String" />
+      <Value Key="TestParameters" Value="[Demo:Demo]=true" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&quot;ShowDataSourceDetails&quot;:true}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="eed1e1a4-04c0-4a52-87ec-1a7cb3752863" Json="True" KeyGuid="8b5abb31-cfe6-4963-a016-1af4babf5ad6">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="File" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.App, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 300,&#xD;&#xA;  &quot;Left&quot;: 320&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="1550c857-b06b-4b16-8619-ab33982d41a7" Json="True" KeyGuid="8b5abb31-cfe6-4963-a016-1af4babf5ad6">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="Folder" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.App, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 300,&#xD;&#xA;  &quot;Left&quot;: 660&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="590d5961-c2d5-4f50-867a-5c609dd820c8" AttributeSetName="UiPickerModeTree" EntityGUID="7f027930-1498-4463-ab9a-42e7e87825b7" Json="True">
+      <Value Key="Title" Value="FileFolderCPTreeConfig" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeAllowSelectBranch" Value="True" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeAllowSelectLeaf" Value="True" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeAllowSelectRoot" Value="True" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeBranchesStream" Value="FolderStream" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeChildIdField" Value="Id" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeChildParentRefField" Value="Parent" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeDepthMax" Value="10" Type="Number">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeLeavesStream" Value="FileStream" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeParentChildRefField" Value="Children" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeParentIdField" Value="Id" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeRelationship" Value="child-parent" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeShowRoot" Value="True" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="590d5961-c2d5-4f50-867a-5c609dd820c8" AttributeSetName="UiPickerModeTree" EntityGUID="1e16bdd1-7e4d-40b4-ac96-83c5d0374731" Json="True">
+      <Value Key="Title" Value="FileFolderPCTreeConfig" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeAllowSelectBranch" Value="True" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeAllowSelectLeaf" Value="True" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeAllowSelectRoot" Value="True" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeBranchesStream" Value="FolderStream" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeChildIdField" Value="Id" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeChildParentRefField" Value="Parent" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeDepthMax" Value="10" Type="Number">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeLeavesStream" Value="FileStream" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeParentChildRefField" Value="Children" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeParentIdField" Value="Id" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeRelationship" Value="parent-child" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="TreeShowRoot" Value="True" Type="Boolean">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="5f8e3968-e02b-40d5-ab77-f60c2e73d244" AttributeSetName="UiPickerSourceQuery" EntityGUID="f46b564f-56c6-4ada-b6f1-13a4e952ff25" Json="True">
+      <Value Key="CreateTypes" Value="File,Folder" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="Name" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="MoreFields" Value="Children,Parent" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Query" Value="FileFolderQuery" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="QueryParameters" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamName" Value="FileStream,FolderStream" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="FileFolderQuerySource" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Value" Value="Guid" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="ContentType" AttributeSetName="ContentType" EntityGUID="1a8891ad-6ae4-4195-9687-dc521b9fa892" Json="True" KeyString="c8b14c2b-02d9-4e8a-897d-31d711a126ed">
+      <Value Key="AdditionalSettings" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Description" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="DynamicChildrenField" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="EditInstructions" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Icon" Value="" Type="Hyperlink">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Label" Value="TreePickersMultyStream" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Link" Value="" Type="Hyperlink">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="ListInstructions" Value="" Type="String">
+        <Dimension DimensionID="6" ReadOnly="false" />
+      </Value>
+      <Value Key="Notes" Value="" Type="String">
         <Dimension DimensionID="6" ReadOnly="false" />
       </Value>
     </Entity>
