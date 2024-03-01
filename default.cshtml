@@ -9,21 +9,21 @@
     var mazda = cars.FirstOrDefault(c => c.Title == "Mazda");
     var subaru = cars.FirstOrDefault(c => c.Title == "Subaru");
     var citroen = cars.FirstOrDefault(c => c.Title == "Citroen");
+
+    var prefillMazdaEntityEntity = "EntityEntity=" + mazda.Guid;
+    var prefillSubaruEntityEntity = "EntityEntity=" + subaru.Guid;
+    var prefillSubaruAndMazdaEntityEntity = "EntityEntity=" + subaru.Guid + "," + mazda.Guid;
+    @* var prefillMazdaId = "EntityEntity=[" + mazda.Id + "]"; *@
+
+    var prefillKawasakiEntityEntity = "EntityEntity=" + kawasaki.Guid;
+    var prefillMazdaAndKawasakiEntityEntity = "EntityEntity=" + mazda.Guid + "," + kawasaki.Guid;
 }
 
 <h1 @Kit.Toolbar.Default()>Test pickers app</h1>
 
 <h2>Entity - Entity</h2>
+<h3>Old configs</h3>
 <ul>
-    @{
-        var prefillMazdaEntityEntity = "EntityEntity=" + mazda.Guid;
-        var prefillSubaruEntityEntity = "EntityEntity=" + subaru.Guid;
-        var prefillSubaruAndMazdaEntityEntity = "EntityEntity=" + subaru.Guid + "," + mazda.Guid;
-        @* var prefillMazdaId = "EntityEntity=[" + mazda.Id + "]"; *@
-
-        var prefillKawasakiEntityEntity = "EntityEntity=" + kawasaki.Guid;
-        var prefillMazdaAndKawasakiEntityEntity = "EntityEntity=" + mazda.Guid + "," + kawasaki.Guid;
-    }
     <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillMazdaEntityEntity)>
         With prefill Mazda (send GUID, show Mazda)
     </li>
@@ -42,6 +42,32 @@
         With prefill Kawasaki (send GUID, show some GUID)
     </li>
     <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill:
+             prefillMazdaAndKawasakiEntityEntity)>
+        With prefill Mazda and Kawasaki (send GUIDs, show Mazda and some GUID)
+    </li>
+</ul>
+<h3>New configs</h3>
+<ul>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("NewEntityPickerEntitySingle", prefill:
+             prefillMazdaEntityEntity)>
+        With prefill Mazda (send GUID, show Mazda)
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("NewEntityPickerEntitySingle", prefill:
+             prefillSubaruEntityEntity)>
+        With prefill Subaru (send GUID, show Subaru)
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("NewEntityPickerEntitySingle", prefill:
+             prefillSubaruAndMazdaEntityEntity)>
+        With prefill Subaru and Mazda (send GUIDs, show Subaru and Mazda)
+    </li>
+    @* <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillMazdaId)>
+    With prefill Mazda ID
+    </li> *@
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("NewEntityPickerEntitySingle", prefill:
+             prefillKawasakiEntityEntity)>
+        With prefill Kawasaki (send GUID, show some GUID)
+    </li>
+    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("NewEntityPickerEntitySingle", prefill:
              prefillMazdaAndKawasakiEntityEntity)>
         With prefill Mazda and Kawasaki (send GUIDs, show Mazda and some GUID)
     </li>
