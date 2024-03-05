@@ -17,57 +17,61 @@
 
     var prefillKawasakiEntityEntity = "EntityEntity=" + kawasaki.Guid;
     var prefillMazdaAndKawasakiEntityEntity = "EntityEntity=" + mazda.Guid + "," + kawasaki.Guid;
+
+    var tlbHover = Kit.Toolbar.Empty().Settings(hover: "left");
 }
 
 <h1 @Kit.Toolbar.Default()>Test pickers app</h1>
-
+<p>
+  This contains a lot of test. Most of them you'll need to access in the App Admin.
+</p>
 <h2>Entity - Entity</h2>
 <h3>Old configs</h3>
 <ul>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillMazdaEntityEntity)>
+    <li @tlbHover.New("OldEntityEntitySingle", prefill: prefillMazdaEntityEntity)>
         With prefill Mazda (send GUID, show Mazda)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillSubaruEntityEntity)>
+    <li @tlbHover.New("OldEntityEntitySingle", prefill: prefillSubaruEntityEntity)>
         With prefill Subaru (send GUID, show Subaru)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill:
+    <li @tlbHover.New("OldEntityEntitySingle", prefill:
              prefillSubaruAndMazdaEntityEntity)>
         With prefill Subaru and Mazda (send GUIDs, show Subaru and Mazda)
     </li>
-    @* <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillMazdaId)>
+    @* <li @tlbHover.New("OldEntityEntitySingle", prefill: prefillMazdaId)>
     With prefill Mazda ID
     </li> *@
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill:
+    <li @tlbHover.New("OldEntityEntitySingle", prefill:
              prefillKawasakiEntityEntity)>
         With prefill Kawasaki (send GUID, show some GUID)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill:
+    <li @tlbHover.New("OldEntityEntitySingle", prefill:
              prefillMazdaAndKawasakiEntityEntity)>
         With prefill Mazda and Kawasaki (send GUIDs, show Mazda and some GUID)
     </li>
 </ul>
 <h3>New configs</h3>
 <ul>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("NewEntityPickerEntitySingle", prefill:
+    <li @tlbHover.New("NewEntityPickerEntitySingle", prefill:
              prefillMazdaEntityEntity)>
         With prefill Mazda (send GUID, show Mazda)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("NewEntityPickerEntitySingle", prefill:
+    <li @tlbHover.New("NewEntityPickerEntitySingle", prefill:
              prefillSubaruEntityEntity)>
         With prefill Subaru (send GUID, show Subaru)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("NewEntityPickerEntitySingle", prefill:
+    <li @tlbHover.New("NewEntityPickerEntitySingle", prefill:
              prefillSubaruAndMazdaEntityEntity)>
         With prefill Subaru and Mazda (send GUIDs, show Subaru and Mazda)
     </li>
-    @* <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityEntitySingle", prefill: prefillMazdaId)>
+    @* <li @tlbHover.New("OldEntityEntitySingle", prefill: prefillMazdaId)>
     With prefill Mazda ID
     </li> *@
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("NewEntityPickerEntitySingle", prefill:
+    <li @tlbHover.New("NewEntityPickerEntitySingle", prefill:
              prefillKawasakiEntityEntity)>
         With prefill Kawasaki (send GUID, show some GUID)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("NewEntityPickerEntitySingle", prefill:
+    <li @tlbHover.New("NewEntityPickerEntitySingle", prefill:
              prefillMazdaAndKawasakiEntityEntity)>
         With prefill Mazda and Kawasaki (send GUIDs, show Mazda and some GUID)
     </li>
@@ -84,24 +88,24 @@
         var prefillKawasakiEntityQuery = "EntityQuery=" + kawasaki.Guid;
         var prefillMazdaAndKawasakiEntityQuery = "EntityQuery=" + mazda.Guid + "," + kawasaki.Guid;
     }
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill: prefillMazdaEntityQuery)>
+    <li @tlbHover.New("OldEntityQuerySingle", prefill: prefillMazdaEntityQuery)>
         With prefill Mazda(send GUID, show Mazda)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill: prefillSubaruEntityQuery)>
+    <li @tlbHover.New("OldEntityQuerySingle", prefill: prefillSubaruEntityQuery)>
         With prefill Subaru (send GUID, show Subaru)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill:
+    <li @tlbHover.New("OldEntityQuerySingle", prefill:
              prefillSubaruAndMazdaEntityQuery)>
         With prefill Subaru and Mazda (send GUIDs, show Subaru and Mazda)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingleSpecialStream", prefill:
+    <li @tlbHover.New("OldEntityQuerySingleSpecialStream", prefill:
              prefillCitroenEntityQuery)>
         With prefill Citroen(send GUID, show Citroen) on a field with special query stream
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill: prefillKawasakiEntityQuery)>
+    <li @tlbHover.New("OldEntityQuerySingle", prefill: prefillKawasakiEntityQuery)>
         With prefill Kawasaki (send GUID, show some GUID)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldEntityQuerySingle", prefill:
+    <li @tlbHover.New("OldEntityQuerySingle", prefill:
              prefillMazdaAndKawasakiEntityQuery)>
         With prefill Mazda and Kawasaki (send GUIDs, show Mazda and some GUID)
     </li>
@@ -114,13 +118,13 @@
         var prefillSubaruStringQuery = "StringQuery=" + subaru.Attribute("Model");
         var prefillSubaruAndMazdaStringQuery = "StringQuery=" + subaru.Attribute("Model") + "," + mazda.Attribute("Model");
     }
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldStringQuerySingle", prefill: prefillMazdaStringQuery)>
+    <li @tlbHover.New("OldStringQuerySingle", prefill: prefillMazdaStringQuery)>
         With prefill Mazda (send Miata, show Mazda)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldStringQuerySingle", prefill: prefillSubaruStringQuery)>
+    <li @tlbHover.New("OldStringQuerySingle", prefill: prefillSubaruStringQuery)>
         With prefill Subaru (send Impreza WRX STI, show Subaru)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldStringQuerySingle", prefill:
+    <li @tlbHover.New("OldStringQuerySingle", prefill:
              prefillSubaruAndMazdaStringQuery)>
         With prefill Subaru and Mazda (send Impreza WRX STI, Miata, show Subaru and Mazda)
     </li>
@@ -133,15 +137,15 @@
         var prefillSubaruStringDropdown = "StringDropdown=" + "Subaru";
         var prefillSubaruAndMazdaStringDropdown = "StringDropdown=" + "Subaru" + "," + "Mazda";
     }
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldStringDropdownSingle", prefill:
+    <li @tlbHover.New("OldStringDropdownSingle", prefill:
              prefillMazdaStringDropdown)>
         With prefill Mazda (send Mazda, show Miata)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldStringDropdownSingle", prefill:
+    <li @tlbHover.New("OldStringDropdownSingle", prefill:
              prefillSubaruStringDropdown)>
         With prefill Subaru (send Subaru, show Impreza WRX STI)
     </li>
-    <li @Kit.Toolbar.Empty().Settings(hover: "left").New("OldStringDropdownSingle", prefill:
+    <li @tlbHover.New("OldStringDropdownSingle", prefill:
              prefillSubaruAndMazdaStringDropdown)>
         With prefill Subaru and Mazda (send Subaru, Mazda, show Impreza WRX STI, Miata)
     </li>
